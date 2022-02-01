@@ -8,3 +8,8 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+total_revenue = Store.sum('annual_revenue')
+puts "total_revenue: " + total_revenue.to_s
+
+average_revenue = Store.sum('annual_revenue')/Store.count
+puts "average_revenue: " + average_revenue.to_s
